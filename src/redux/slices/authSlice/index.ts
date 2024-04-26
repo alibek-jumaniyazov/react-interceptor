@@ -17,7 +17,13 @@ export const authSlice = createSlice({
         setAuth: (state, { payload }: PayloadAction<AuthState>) => {
             return (state = payload);
         },
+        clearAuth :  (state) => {
+            return (state = {
+                accessToken: null,
+                refreshToken:null
+            });
+        },
     },
 });
 
-export const { setAuth } = authSlice.actions;
+export const { setAuth , clearAuth } = authSlice.actions;

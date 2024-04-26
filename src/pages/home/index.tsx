@@ -1,11 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-type Props = {}
+type Props = {};
 
 export default function HomePage({}: Props) {
-  return (
-    <div>Welcome to Home Page button
-       <Link to='/login'>  Login</Link></div>
-  )
+    return (
+        <div className="HomePage">
+            Welcome to Home Page button
+            <Link to="/login">Login</Link>
+            or
+            <Link to="/signup">Sign up</Link>
+        </div>
+    );
 }

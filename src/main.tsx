@@ -5,7 +5,7 @@ import { persister, store } from "@/redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
-
+import '@/styles/index.css'
 const client = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
